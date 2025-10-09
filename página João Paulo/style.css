@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background-color: #67a164d8;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+h1 {
+    font-style: italic 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 50px 0;
+}
+
+section img {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #222;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #3d593a;
+    padding: 15px;
+    font-size: 0.9em;
+}
