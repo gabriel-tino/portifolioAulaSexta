@@ -115,14 +115,11 @@ body {
   margin: 5px 0 0 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-body{
-    background-color: rgb(111, 137, 100);
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+body {
+  background-color: rgb(111, 137, 100);
 }
-
-
-
 
 .logo {
   position: absolute;
@@ -131,55 +128,52 @@ body{
   height: auto;
 }
 
-
 .header-topo {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.titulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cabeçalho{
-    font-family: "Great Vibes";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    color: rgb(241, 250, 238);
+.cabeçalho {
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: rgb(241, 250, 238);
 }
-
 
 .menu-principal {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-principal ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 35px;
 }
 
 .menu-principal a {
-    font-family: "Roboto Mono", monospace;
-    font-size: 16px;
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(241, 250, 238);
-    padding: 10px 0;
-    transition: color 0.3s ease;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(241, 250, 238);
+  padding: 10px 0;
+  transition: color 0.3s ease;
 }
 
 .menu-principal li:hover a {
-    color: rgb(58, 58, 58);
+  color: rgb(58, 58, 58);
 }
 
 .rodape {
@@ -201,7 +195,7 @@ body{
   margin: 0;
 }
 
-.informacaorodape{
+.informacaorodape {
   font-size: 14px;
   margin: 5px 0 0 0;
 }
