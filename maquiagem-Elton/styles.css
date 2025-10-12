@@ -1,0 +1,12 @@
+
+body {
+            background-image: url('img/nova logo.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover; /* Redimensiona a imagem para cobrir toda a página */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+            background-position: center; /* Centraliza a imagem */
+            font-family: Arial, sans-serif; /* Define a fonte padrão */
+            color: #333; /* Cor do texto */
+            margin: 0;
+            padding: 20px;
+        }
