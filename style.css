@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 body {
   background-color: rgb(111, 137, 100);
@@ -11,13 +11,17 @@ body {
   }
 }
 .logo {
+  border-radius: 50%;
+  object-fit: cover;
   position: absolute;
   left: 30px;
-  width: 130px;
+  width: 150px;
   height: auto;
 }
 
 .header-topo {
+  flex-direction: column;
+  align-items: center;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -29,12 +33,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.cabeçalho {
+.cabecalho {
   font-family: "Great Vibes";
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
   color: rgb(241, 250, 238);
+  padding: 50px;
 }
 
 .menu-principal {
@@ -52,8 +57,9 @@ body {
 }
 
 .menu-principal a {
+  display: block;
   font-family: "Roboto Mono", monospace;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   text-decoration: none;
   color: rgb(241, 250, 238);
@@ -65,6 +71,25 @@ body {
   color: rgb(58, 58, 58);
 }
 
+.hero {
+  background-color: rgb(100, 121, 137);
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: rgb(241, 250, 238);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: rgb(241, 250, 238);
+
+  font-size: 22px;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
 .icones {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
@@ -73,15 +98,17 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 80px 10px;
-  gap: 80px;
-  background-color: #e7cfcf;
+  gap: 100px;
+  background-color: rgb(100, 121, 137);
   color: #3b3b3b;
-  border-radius: 20px;
-  max-width: 1000px;
+
   margin: 80px auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.icone p {
+  color: #2f2f2f;
 }
 .icone {
+  margin-bottom: 20px;
   text-align: center;
   max-width: 250px;
 }
@@ -91,93 +118,12 @@ body {
   margin-bottom: 20px;
 }
 
+#carouselExampleDark img {
+  height: 500px; /* altura desejada */
+  object-fit: cover; /* mantém o enquadramento */
+}
 .rodape {
-  background-color: rgb(111, 137, 100);
-  font-family: "Roboto Mono", monospace;
-  color: rgb(241, 250, 238);
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
-}
-
-.conteudorodape {
-  margin-bottom: 10px;
-}
-
-.nomerodape {
-  font-family: "Great Vibes", cursive;
-  font-size: 28px;
-  margin: 0;
-}
-
-.informacaorodape {
-  font-size: 14px;
-  margin: 5px 0 0 0;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-body {
-  background-color: rgb(111, 137, 100);
-}
-
-.logo {
-  position: absolute;
-  left: 30px;
-  width: 130px;
-  height: auto;
-}
-
-.header-topo {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.titulo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cabeçalho {
-  font-family: "Great Vibes";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 50px;
-  color: rgb(241, 250, 238);
-}
-
-.menu-principal {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.menu-principal ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 35px;
-}
-
-.menu-principal a {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-style: normal;
-  text-decoration: none;
-  color: rgb(241, 250, 238);
-  padding: 10px 0;
-  transition: color 0.3s ease;
-}
-
-.menu-principal li:hover a {
-  color: rgb(58, 58, 58);
-}
-
-.rodape {
-  background-color: rgb(111, 137, 100);
+  background-color: rgb(127, 137, 100);
   font-family: "Roboto Mono", monospace;
   color: rgb(241, 250, 238);
   text-align: center;
