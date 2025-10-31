@@ -5,49 +5,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio Sempre Bela - Depilação</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <div class="header-topo">
+      <img src="img/404300007_214968121633282_1152922817104428598_n.jpg" alt="Logo Sempre Bella" class="logo">
+      <div class="titulo">
+        <h1 class="cabecalho">
+          Studio Sempre Bella
+        </h1>
+      </div>
+    </div>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">Menu</a></li>
 
-  <h1>Studio Sempre Bela</h1>
-  <p>Depilação profissional com cuidado, higiene e conforto.</p>
-  <img src="img/sempre_bella.jpg" alt="100" width="400">
-  <hr>
+        <li><a href="maquiagem-index.html">Maquiagem</a></li>
+        <li><a href="unhas-j-index.html">Unhas</a></li>
+        <li><a href="Sobrancelha.html">Sobrancelha</a></li>
+        <li><a href="cabelo-index.html">Cabelo</a></li>
+        <li><a href="depilacao-index.html">Depilação</a></li>
+        <li><a href="cilios-index.html">Cílios</a></li>
+        <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3nR26VYjgr9v_PiGlITyF4m9ON4Vr-B4tQ67OXqUJMEltBQ_Lq4k9gQ4TyXfHMTh1VgAYvHvNi">Marque seu horário</a></li>
+      </ul>
+    </nav>
 
-  <h2>Serviços de Depilação</h2>
-  <ul>
-    <li><a href="img/cera quente.png" target="_blank" rel="noopener noreferrer">Depilação com cera quente</a></li>
-    <li><a href="img/cera fria.png" target="_blank" rel="noopener noreferrer">Depilação com cera fria</a></li>
-    <li><a href="img/depilação facial.png" target="_blank" rel="noopener noreferrer">Depilação facial e íntima</a></li>
-    <li><a href="img/linha.png" target="_blank" rel="noopener noreferrer">Depilação egípcia (linha)</a></li>
-  </ul>
+    <hr>
 
-  <h2>Tabela de Preços</h2>
-  <ul>
-    <li>Buço – R$ 20,00</li>
-    <li>Axilas – R$ 30,00</li>
-    <li>Pernas completas – R$ 70,00</li>
-    <li>Virilha completa – R$ 60,00</li>
-    <li>Combo pernas + virilha – R$ 120,00</li>
-  </ul>
+    <div class="descricao-depilacao">
+      <h1>Studio Sempre Bela</h1>
+      <p class="texto-descricao">Depilação profissional com cuidado, higiene e conforto.</p>
+    </div>
 
-  <h2>Cuidados com a Pele</h2>
-  <p><strong>Antes da depilação:</strong> evite exposição ao sol e esfolie a pele no dia anterior.</p>
-  <p><strong>Depois da depilação:</strong> evite roupas apertadas, sol, piscina e use hidratante calmante.</p>
+    <hr">
 
-  <h2>Depoimentos de Clientes</h2>
-  <p>"Ambiente super limpo e atendimento impecável. Recomendo!" – Juliana M.</p>
-  <p>"Me senti muito bem cuidada! Voltarei com certeza." – Renata F.</p>
+      <nav class="demonstracao-servicos">
+        <h2>Serviços de Depilação</h2>
+        <ul>
+          <li>
+            <p class="texto-demonstracao" onclick="mostrarImagem('ceraQ')">Depilação com cera quente</p>
+            <img id="ceraQ" class="imagemD" src="img/cera quente.png" alt="cera quente">
+          </li>
 
-  <h2>Agende seu Horario</h2>
-  <p><a href="https://wa.me/5511999999999?text=Olá%20gostaria%20de%20agendar%20um%20Horario" target="_blank">
-      Fale conosco no WhatsApp
-    </a></p>
-  <p><a href="https://www.instagram.com/semprebella_studiios?igsh=MWo1ODB6YTFocWkycQ==" target="_blank" rel="noopener noreferrer">Fale conosco pelo instagram.</a></p>
-  <hr>
+          <li>
+            <p class="texto-demonstracao" onclick="mostrarImagem('ceraF')">Depilação com cera fria</p>
+            <img id="ceraF" class="imagemD" src="img/cera fria.png" alt="cera fria">
+          </li>
 
-  <p>&copy; 2025 Salão Sempre Bela. Todos os direitos reservados.</p>
+          <li>
+            <p class="texto-demonstracao" onclick="mostrarImagem('depF')">Depilação facial e íntima</p>
+            <img id="depF" class="imagemD" src="img/depilação facial.png" alt="depilação facial">
+          </li>
 
+          <li>
+            <p class="texto-demonstracao" onclick="mostrarImagem('depL')">Depilação egípcia (linha)</p>
+            <img id="depL" class="imagemD" src="img/linha.png" alt="depilação linha">
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="tabela-precos">
+        <h2>Tabela de Preços</h2>
+        <ul>
+          <li>Buço – R$ 20,00</li>
+          <li>Axilas – R$ 30,00</li>
+          <li>Pernas completas – R$ 70,00</li>
+          <li>Virilha completa – R$ 60,00</li>
+          <li>Combo pernas + virilha – R$ 120,00</li>
+        </ul>
+      </nav>
+
+      <div class="cuidados">
+        <h2>Cuidados com a Pele</h2>
+        <p><strong>Antes da depilação:</strong> evite exposição ao sol e esfolie a pele no dia anterior.</p>
+        <p><strong>Depois da depilação:</strong> evite roupas apertadas, sol, piscina e use hidratante calmante.</p>
+      </div>
+
+      <div class="depoimentos">
+        <h2>Depoimentos de Clientes</h2>
+        <p>"Ambiente super limpo e atendimento impecável. Recomendo!" – Juliana M.</p>
+        <p>"Me senti muito bem cuidada! Voltarei com certeza." – Renata F.</p>
+      </div>
+
+      <div class="agendamento">
+        <h2>Agende seu Horario</h2>
+        <p><a href="https://wa.me/5511984057526?text=Olá%20gostaria%20de%20agendar%20um%20Horario" target="_blank">
+            Fale conosco no WhatsApp
+          </a></p>
+        <p><a href="https://www.instagram.com/semprebella_studiios?igsh=MWo1ODB6YTFocWkycQ==" target="_blank" rel="noopener noreferrer">Fale conosco pelo instagram.</a></p>
+      </div>
+
+      <hr>
+
+      <footer class="rodape">
+        <div class="conteudorodape">
+          <p class="nomerodape">Studio Sempre Bella</p>
+          <p class="informacaorodape">
+            © 2025 Todos os direitos reservados | Beleza & Estética
+          </p>
+        </div>
+      </footer>
+
+      <a href="https://wa.me/5511984057526?text=Olá%20gostaria%20de%20agendar%20um%20Horario" target="_blank" class="wpp-flutuante">
+        <img src="img/WhatsApp Logo.png" alt="WhatsApp">
+      </a>
+
+      <script src="script.js"></script>
 </body>
 
 </html>

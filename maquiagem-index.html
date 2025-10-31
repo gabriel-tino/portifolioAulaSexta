@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,34 @@
     <meta name="description" content="Studio Sempre Bella - Beleza e Estética. Especializado em maquiagem, design de sobrancelhas, tratamentos faciais e penteados.">
     <meta name="keywords" content="Studio Sempre Bella, maquiagem, design de sobrancelhas, tratamentos faciais, penteados, beleza, estética">
     <meta name="author" content="Elton do Carmo Santos">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/title.jpg" type="image/x-icon">
-
-
+    <link rel="stylesheet" href="style.css">
+    <link class="meuicon" rel="icon" href="img/favicon.png" type="image/png " sizes="16x16">
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <h1> Studio Sempre Bella</h1>
-    <h2>Beleza e Estética</h2>
-    <img src="img/nova logo.jpg" alt="Logo Sempre Bella" width="400" height="400">
-    <hr>
+    <header>
+        <div class="titulo">
+            <h1 class="cabecalho"> Studio Sempre Bella</h1>
+        </div>
+        <div class="header-topo">
+            <img src="img/404300007_214968121633282_1152922817104428598_n.jpg" alt="Logo Sempre Bella" class="logo">
+        </div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+
+                <li><a href="maquiagem-index.html">Maquiagem</a></li>
+                <li><a href="unhas-j-index.html">Unhas</a></li>
+                <li><a href="Sobrancelha.html">Sobrancelha</a></li>
+                <li><a href="cabelo-index.html">Cabelo</a></li>
+                <li><a href="depilacao-index.html">Depilação</a></li>
+                <li><a href="cilios-index.html">Cílios</a></li>
+                <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3nR26VYjgr9v_PiGlITyF4m9ON4Vr-B4tQ67OXqUJMEltBQ_Lq4k9gQ4TyXfHMTh1VgAYvHvNi">Marque seu horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- Sobre -->
     <h2>Sobre</h2>
@@ -28,67 +44,132 @@
         Nosso espaço foi criado para oferecer conforto, elegância e um atendimento personalizado.
         Aqui, acreditamos que cada pessoa merece se sentir confiante e ainda mais bonita. <br>
         Venha nos visitar e descubra como podemos ajudar você a se sentir sempre bela!
-        •atendimento apenas por horário marcado!. <a href="https://wa.me/5511984057526?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank" rel="noopener noreferrer">agende seu horário com antecedência.</a>
+        •atendimento apenas por horário marcado!. <br> <a href="https://wa.me/5511984057526?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank" rel="noopener noreferrer">agende seu horário com antecedência.</a>
 
 
     </p>
 
-    <hr>
+
 
     <!-- Serviços -->
-    <h2>Serviços</h2>
-    <ul>
-        <li><a href="img/Maquiagem.png" target="_blank" rel="noopener noreferrer">Maquiagem profissional para festas e eventos</a></li>
-        <li><a href="img/sobrancelha.png" target="_blank" rel="noopener noreferrer">Design de sobrancelhas</a></li>
-        <li><a href="img/tratamentode_pele.png" target="_blank" rel="noopener noreferrer">Tratamentos faciais e limpeza de pele</a></li>
-        <li><a href="img/PenteadosDe_cabelo.png" target="_blank" rel="noopener noreferrer">Penteados para casamentos e formaturas</a></li>
-        <li><a href="img/cuidadosCabelo.png" target="_blank" rel="noopener noreferrer">Cuidados com cabelo e pele</a></li>
-    </ul>
+    <section class="servicos">
+        <h2>Serviços</h2>
+        <ul class="servicos-lista">
+            <li>
+                <a href="img/maquiagemwpp.jpg">Maquiagem</a>
+                <img src="img/maquiagemwpp.jpg" alt="maquiagem" class="servico-img">
+            </li>
 
-    <hr>
+            <li>
+                <a href="img/sobrancelha.png">Design de Sobrancelha</a>
+                <img src="img/sobrancelha.png" alt="sobrancelha" class="servico-img">
+            </li>
+
+            <li>
+                <a href="img/tratamentode_pele.png">Tratamento de Pele</a>
+                <img src="img/tratamentode_pele.png" alt="tratamento de pele" class="servico-img">
+            </li>
+
+            <li>
+                <a href="img/PenteadosDe_cabelo.png">Penteados Casamento e Formatura</a>
+                <img src="img/PenteadosDe_cabelo.png" alt="penteados de cabelo" class="servico-img">
+            </li>
+
+            <li>
+                <a href="img/cuidadosCabelo.png">Cuidados com Cabelo e Pele</a>
+                <img src="img/cuidadosCabelo.png" alt="cuidados com cabelo e pele" class="servico-img">
+            </li>
+        </ul>
+    </section>
+
+
 
     <!--Maquiagem -->
-    <h2>Maquiagem</h2>
-    <p>
-        A maquiagem é uma forma de arte que realça o que há de mais bonito em cada pessoa.
-        No <b>Studio Sempre Bella</b>, trabalhamos com produtos de alta qualidade e técnicas modernas
-        para garantir um resultado impecável, seja para o dia a dia ou ocasiões especiais.
-    </p>
-    <p>
-        Nossos profissionais estão sempre atualizados com as tendências do mundo da beleza,
-        oferecendo desde maquiagens suaves e naturais até produções sofisticadas e marcantes.
-    </p>
+    <section class="maquiagem">
+        <div class="maquiagem-texto">
+            <h2>Maquiagem</h2>
+            <p>
+                A maquiagem é uma forma de arte que realça o que há de mais bonito em cada pessoa.
+                No <b>Studio Sempre Bella</b>, trabalhamos com produtos de alta qualidade e técnicas modernas
+                para garantir um resultado impecável, seja para o dia a dia ou ocasiões especiais.
+            </p>
+            <p>
+                Nossos profissionais estão sempre atualizados com as tendências do mundo da beleza,
+                oferecendo desde maquiagens suaves e naturais até produções sofisticadas e marcantes.
+            </p>
+        </div>
+        <div class="maquiagem-img">
+            <img src="img/maquiagemwpp.jpg" alt="Serviço de maquiagem no Studio Sempre Bella">
 
-    <hr>
+        </div>
+    </section>
+
+
 
     <!-- Produtos -->
-    <h2>Produtos Utilizados</h2>
-    <p>
-        Trabalhamos com marcas renomadas no mercado de beleza, garantindo qualidade e durabilidade em cada aplicação:
-    </p>
-    <ul>
-        <li> <a href="https://www.maccosmetics.com.br/?gad_source=1&gad_campaignid=21143719408&gbraid=0AAAAADqLECZVJMWdmcNd8Bm38AT13VPVm&gclid=CjwKCAjwi4PHBhA-EiwAnjTHuWtnrZehaToR4hzeUyXqnR2mzLJfWdAC4olKzYz-Z8AU4VjMygbS_hoClJYQAvD_BwE" target="_blank">MAC Cosmetics</a></li>
-        <li> <a href="https://loja.marykay.com.br/?utm_source=affiliate_link_generator&utm_campaign=0ed4597b-b42c-43cf-aa7e-1c9437cff75e_a1f197a1-559c-4114-b6e2-d646a367fc5c_UyqnSCfEe1hZ&is_active=true&lomadee_campaign=0ed4597b-b42c-43cf-aa7e-1c9437cff75e_a1f197a1-559c-4114-b6e2-d646a367fc5c_UyqnSCfEe1hZ&lomadee_source=affiliate_link_generator&gad_source=1&gad_campaignid=23073040977&gbraid=0AAAABBo_pzoXyXXJGNZiGGlC161iu11b0&gclid=CjwKCAjwi4PHBhA-EiwAnjTHual4kbT2u05E61yuDFzbDzGXIkceF8pzk41wVwyE4pFPHch6U-YEzRoC2UkQAvD_BwE" target="_blank" rel="noopener noreferrer">Mary Kay</a></li>
-        <li><a href="https://www.rubyrosemaquiagem.com.br/?srsltid=AfmBOop2hNaoKb0R2zPfMM8RIFmO1g37uZsxXQ3B4D-3YOQ30adlrAH-" target="_blank" rel="noopener noreferrer">Ruby Rose</a></li>
-        <li><a href="https://www.linhabrunatavares.com/" target="_blank" rel="noopener noreferrer">Bruna Tavares</a></li>
-        <li><a href="https://www.vult.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=G:VUL:TextoBrand:Institucional:CPC&gad_source=1&gad_campaignid=12880082096&gbraid=0AAAAACSgOk9_Ts-eTscazHt823NJmgkxz&gclid=CjwKCAjwi4PHBhA-EiwAnjTHuapund7sRVUNWcX4CprPJuCQnBOB2FPKQB0Ua7LBOYqjj5QCAi-KLBoCyscQAvD_BwE" target="_blank" rel="noopener noreferrer">Vult</a></li>
-    </ul>
+    <section class="produtos">
+        <h2>Produtos Utilizados</h2>
+        <p>
+            Trabalhamos com marcas renomadas no mercado de beleza, garantindo qualidade e durabilidade em cada aplicação:
+        </p>
+        <ul class="lista-produtos">
+            <li>
+                <p> <a href="https://www.maccosmetics.com.br/?gad_source=1&gad_campaignid=21143719408&gbraid=0AAAAADqLECZVJMWdmcNd8Bm38AT13VPVm&gclid=CjwKCAjwi4PHBhA-EiwAnjTHuWtnrZehaToR4hzeUyXqnR2mzLJfWdAC4olKzYz-Z8AU4VjMygbS_hoClJYQAvD_BwE" target="_blank">💋MAC Cosmetics</a>
+            </li>
+            <li>
+                <p> <a href="https://loja.marykay.com.br/?utm_source=affiliate_link_generator&utm_campaign=0ed4597b-b42c-43cf-aa7e-1c9437cff75e_a1f197a1-559c-4114-b6e2-d646a367fc5c_UyqnSCfEe1hZ&is_active=true&lomadee_campaign=0ed4597b-b42c-43cf-aa7e-1c9437cff75e_a1f197a1-559c-4114-b6e2-d646a367fc5c_UyqnSCfEe1hZ&lomadee_source=affiliate_link_generator&gad_source=1&gad_campaignid=23073040977&gbraid=0AAAABBo_pzoXyXXJGNZiGGlC161iu11b0&gclid=CjwKCAjwi4PHBhA-EiwAnjTHual4kbT2u05E61yuDFzbDzGXIkceF8pzk41wVwyE4pFPHch6U-YEzRoC2UkQAvD_BwE" target="_blank" rel="noopener noreferrer">💄Mary Kay</a>
+            </li>
+            <li>
+                <p> <a href="https://www.rubyrosemaquiagem.com.br/?srsltid=AfmBOop2hNaoKb0R2zPfMM8RIFmO1g37uZsxXQ3B4D-3YOQ30adlrAH-" target="_blank" rel="noopener noreferrer">💎Ruby Rose</a>
+            </li>
+            <li>
+                <p> <a href="https://www.linhabrunatavares.com/" target="_blank" rel="noopener noreferrer">🌸Bruna Tavares</a>
+            </li>
+            <li>
+                <p> <a href="https://www.vult.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=G:VUL:TextoBrand:Institucional:CPC&gad_source=1&gad_campaignid=12880082096&gbraid=0AAAAACSgOk9_Ts-eTscazHt823NJmgkxz&gclid=CjwKCAjwi4PHBhA-EiwAnjTHuapund7sRVUNWcX4CprPJuCQnBOB2FPKQB0Ua7LBOYqjj5QCAi-KLBoCyscQAvD_BwE" target="_blank" rel="noopener noreferrer">💅Vult</a>
+            </li>
+        </ul>
+    </section>
 
-    <hr>
+
 
     <!-- Contato -->
-    <h2>Contato</h2>
-    <p>
-        📍 <a href="https://www.google.com/maps/place/R.+Sebasti%C3%A3o+Batista,+177+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP,+08470-330/@-23.5929799,-46.4054008,15z/data=!4m16!1m9!3m8!1s0x94ce6f76dfe3226d:0xb92d78200e23718d!2sR.+Sebasti%C3%A3o+Batista,+177+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP,+08470-330!3b1!8m2!3d-23.594409!4d-46.4044706!10e5!16s%2Fg%2F11h7kch6_q!3m5!1s0x94ce6f76dfe3226d:0xb92d78200e23718d!8m2!3d-23.594409!4d-46.4044706!16s%2Fg%2F11h7kch6_q?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"> Endereço: Rua Sebastião Batista 177 - Cdd Tiradentes</a><br>
-        📞<a href="https://wa.me/5511984057526?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank">Solicitar Agendamento whatsapp : (11) 98405-7526</a><br>
-        📧 <a href="mailto:contato-semprebella@hotmail.com.br">Envie um e-mail</a><br>
-        📱 <a href="https://www.instagram.com/semprebella_studiios?igsh=MWo1ODB6YTFocWkycQ==" target="_blank">@semprebella_studiios</a>
-    </p>
+    <section class="contato">
+        <h2>Contato</h2>
+        <div class="contato-info">
+            <div class="logoe-info">
+                <img src="img/404300007_214968121633282_1152922817104428598_n.jpg" alt="Logo Sempre Bella" class="logo">
+            </div>
 
-    <hr>
+
+            <div class="info">
+                <p><b>horário de atendimento:</br> 9:00h as 19:00 (de terça à sábado, exceto feriados)</p>
+                <p> 📞<a href="https://wa.me/5511984057526?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank">Solicitar Agendamento whatsapp</a></p>
+                <p><b> 98405-7526</p>
+
+                <p><b>Unidade:</b></br>
+                    📍 <a href="https://www.google.com/maps/place/R.+Sebasti%C3%A3o+Batista,+177+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP,+08470-330/@-23.5929799,-46.4054008,15z/data=!4m16!1m9!3m8!1s0x94ce6f76dfe3226d:0xb92d78200e23718d!2sR.+Sebasti%C3%A3o+Batista,+177+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP,+08470-330!3b1!8m2!3d-23.594409!4d-46.4044706!10e5!16s%2Fg%2F11h7kch6_q!3m5!1s0x94ce6f76dfe3226d:0xb92d78200e23718d!8m2!3d-23.594409!4d-46.4044706!16s%2Fg%2F11h7kch6_q?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Rua Sebastião Batista, 177 - Cdd Tiradentes - SP Cep:08470-330</a></p>
+
+                <p><b>trabalhe conosco</b></br>
+                    📧 <a href="mailto:contato-semprebella@hotmail.com.br">Envie um e-mail</a>
+                <p><b>acompanhe nossas redes sociais</b></br>
+                    📱 <a href="https://www.instagram.com/semprebella_studiios?igsh=MWo1ODB6YTFocWkycQ==" target="_blank">@semprebella_studiios</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Ícone flutuante do WhatsApp -->
+    <a href="https://wa.me/5511984057526" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="60">
+    </a>
 
     <!-- Rodapé -->
-    <footer>
+    <footer class="rodape">
+        <p class="cabecalho">Studio Sempre Bella</p>
+
         <p>© 2025 Studio Sempre Bella - Beleza e Estética | Desenvolvido por Elton do Carmo Santos</p>
     </footer>
 
