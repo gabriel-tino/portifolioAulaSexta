@@ -168,13 +168,31 @@ body {
 }
 
 .conteudorodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
 .nomerodape {
   font-family: "Great Vibes";
   font-size: 40px;
-  margin: 0;
+  margin-bottom: 10px;
+}
+
+.bloco {
+  flex: 1 1 300px;
+  padding: 10px;
+}
+.bloco a {
+  color: rgb(217, 248, 225);
+  text-decoration: none;
+}
+
+.bloco a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .informacaorodape {
@@ -183,33 +201,25 @@ body {
 }
 
 /*Pagina depilação */
-hr {
-  border: none;
-  height: 2px;
-  background-color: rgb(114, 174, 132);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  margin: 25px auto;
-}
 
 .descricao-depilacao {
   font-family: "Great Vibes";
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  color: rgb(7, 7, 6);
+  color: rgb(217, 248, 225);
   margin: auto;
-  background: rgb(114, 174, 132);
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .texto-descricao {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .demonstracao-servicos {
+  color: rgb(217, 248, 225);
+
   margin: auto;
   font-family: Arial, sans-serif;
   border-radius: 10px;
@@ -271,7 +281,6 @@ hr {
   margin: auto;
   font-family: Arial, sans-serif;
   border-radius: 10px;
-  background: rgb(114, 174, 132);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -309,29 +318,6 @@ hr {
 
 .agendamento a:hover {
   color: rgb(240, 243, 239);
-}
-
-.wpp-flutuante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  z-index: 1000;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.wpp-flutuante img {
-  width: 100%;
-  height: 100%;
-}
-
-.wpp-flutuante:hover {
-  transform: scale(1.1);
 }
 
 /* sobrancelha*/
@@ -392,36 +378,36 @@ html {
 }
 
 /* Maquiagem  */
-.sobre {
-  background-color: #fff7f9; /* tom suave de rosa */
+.essencia {
+  background-color: #f2efea; /* tom suave de verde */
   border-radius: 20px; /* bordas arredondadas */
   padding: 20px; /* espaço interno */
-  width: 70%; /* largura ajustável */
+  width: 80%; /* largura ajustável */
   margin: 30px auto; /* centraliza na página */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra leve */
   font-family: "Poppins", sans-serif;
   text-align: justify;
 }
 
-.sobre h2 {
+.essencia h2 {
   color: #d63384; /* rosa forte */
   text-align: center;
 }
 
-.sobre a {
+.essencia a {
   color: #d63384;
   font-weight: bold;
   text-decoration: none;
 }
 
-.sobre a:hover {
+.essencia a:hover {
   text-decoration: underline;
 }
 
 .servicos {
   text-align: center;
   padding: 40px 20px;
-  background-color: #fff7f9;
+  background-color: #f2efea; /* tom suave  verde*/
   border-radius: 20px;
   width: 80%;
   margin: 40px auto;
@@ -444,7 +430,7 @@ html {
 }
 
 .servicos-lista li {
-  background: #fff;
+  background: #fff; /* fundo branco verde */
   border-radius: 15px;
   padding: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -477,7 +463,7 @@ html {
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
-  opacity: 0; /* 🔹 Esconde a imagem */
+  opacity: 0; /* Esconde a imagem */
   transform: scale(1.05);
   transition: opacity 0.5s ease, transform 0.5s ease;
   position: absolute;
@@ -486,22 +472,22 @@ html {
 }
 
 .servicos-lista li:hover .servico-img {
-  opacity: 1; /* 🔹 Mostra a imagem ao passar o mouse */
+  opacity: 1; /*  Mostra a imagem ao passar o mouse */
   transform: scale(1);
 }
 
 .maquiagem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff7f9;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 40px auto;
-  width: 80%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  gap: 20px;
-  flex-wrap: wrap; /* 🔹 Garante que fique bom em telas pequenas */
+  display: flex; /* Usa flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente */
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  background-color: #f2efea; /* tom suave de verde */
+  border-radius: 20px; /* bordas arredondadas */
+  padding: 30px; /* espaço interno */
+  margin: 40px auto; /* centraliza na página */
+  width: 80%; /* largura ajustável */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve */
+  gap: 20px; /* espaço entre texto e imagem */
+  flex-wrap: wrap; /* Garante que fique bom em telas pequenas */
   font-family: "Poppins", sans-serif;
 }
 
@@ -524,19 +510,19 @@ html {
 }
 
 .maquiagem-img img {
-  width: 350px;
-  height: auto;
-  border-radius: 20px; /* 🔹 bordas arredondadas da imagem */
+  width: 350px; /*largura da imagem */
+  height: auto; /*altura da imagem */
+  border-radius: 30px; /* bordas arredondadas da imagem */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
 .maquiagem-img img:hover {
-  transform: scale(1.05); /* 🔹 zoom suave ao passar o mouse */
+  transform: scale(1.05); /* zoom suave ao passar o mouse */
 }
 
 .produtos {
-  background-color: #fff7f9;
+  background-color: #f2efea; /* tom suave verde*/
   border-radius: 20px;
   padding: 40px 20px;
   margin: 40px auto;
@@ -575,7 +561,7 @@ html {
 }
 
 .lista-produtos li:hover {
-  background-color: #ffe4ef;
+  background-color: #ffe4ef; /* leve mudança de cor ao passar o mouse */
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -592,14 +578,14 @@ html {
 }
 
 .contato {
-  background-color: #fff7f9;
+  background-color: #f2efea; /* tom suave verde*/
   border-radius: 20px;
   padding: 40px 20px;
   width: 80%;
   margin: 40px auto;
-  text-align: center;
+  text-align: center; /* centraliza o texto */
   font-family: "Poppins", sans-serif;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve */
 }
 
 .contato h2 {
@@ -619,14 +605,14 @@ html {
   width: 250px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra leve */
 }
 
 .info {
   max-width: 400px;
   text-align: left;
   line-height: 1.8;
-  color: #333;
+  color: #333; /* cor do texto */
 }
 
 .info a {
@@ -664,17 +650,33 @@ html {
   transform: scale(1.1);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(114, 174, 132);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 25px auto;
+}
+.final {
+  text-align: center;
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #d63384;
+  margin-top: 30px;
+}
 /* cilios */
 
 /* Texto introdutório */
 .texto-intro {
-  max-width: 800px;
+  text-align: center;
+  font-size: 1.3em;
   margin: 30px auto;
-  line-height: 1.6;
-  text-align: justify;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
+  max-width: 700px;
+  color: #fdfdfd;
 }
 
 /* Frase de destaque */
