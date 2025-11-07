@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Sempre Bella - Contato</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favcom bela.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="header-topo">
+      <img src="img/404300007_214968121633282_1152922817104428598_n.jpg" alt="Logo Sempre Bella" class="logo">
+      <div class="titulo">
+        <h1 class="cabecalho">Studio Sempre Bella</h1>
+      </div>
+    </div>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">Menu Principal</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="maquiagem.html">Maquiagem</a></li>
+        <li><a href="unhas.html">Unhas</a></li>
+        <li><a href="sobrancelha.html">Sobrancelha</a></li>
+        <li><a href="cabelo.html">Cabelo</a></li>
+        <li><a href="depilacao.html">Depilação</a></li>
+        <li><a href="cilios.html">Cílios</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <section class="formulario-contato">
+    <h2>Entre em Contato</h2>
+    <p>Deixe seus dados e o serviço desejado. Nossa equipe retornará o mais breve possível 💖</p>
+
+    <form action="https://formspree.io/f/mayknqge" method="POST" class="form-contato">
+      <div class="campo">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone / WhatsApp:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+      </div>
+
+      <div class="campo">
+        <label for="servico">Serviço desejado:</label>
+        <select id="servico" name="servico" required>
+          <option value="">Selecione uma opção</option>
+          <option value="Maquiagem">Maquiagem</option>
+          <option value="Unhas">Unhas</option>
+          <option value="Sobrancelha">Sobrancelha</option>
+          <option value="Cabelo">Cabelo</option>
+          <option value="Depilação">Depilação</option>
+          <option value="Cílios">Cílios</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Deixe sua mensagem ou observação..."></textarea>
+      </div>
+
+      <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <footer class="rodape">
+    <div class="conteudorodape">
+      <div class="bloco">
+        <p><strong>Horário de atendimento:</strong><br> 9:00h às 19:00h<br>(terça à sábado, exceto feriados)</p>
+        <p>📞 <a href="https://wa.me/5511984057526?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank">Solicitar Agendamento via WhatsApp</a></p>
+      </div>
+      <div class="bloco">
+        <h2 class="nomerodape">Studio Sempre Bella</h2>
+        <p>© 2025 Todos os direitos reservados</p>
+        <p>Beleza & Estética</p>
+      </div>
+      <div class="bloco">
+        <p><strong>Unidade:</strong> 📍 <a href="https://www.google.com/maps/place/R.+Sebasti%C3%A3o+Batista,+177+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP,+08470-330" target="_blank">Rua Sebastião Batista, 177 - Cidade Tiradentes - SP</a></p>
+        <p><strong>Redes sociais:</strong> 📱 <a href="https://www.instagram.com/semprebella_studiios?igsh=MWo1ODB6YTFocWkycQ==" target="_blank">@semprebella_studiios</a></p>
+      </div>
+    </div>
+    <a href="https://wa.me/5511984057526" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="60">
+    </a>
+  </footer>
+
+</body>
+
+</html>

@@ -1124,3 +1124,76 @@ nav a {
   font-size: 15px;
   text-align: left;
 }
+.formulario-contato {
+  background-color: #f2efea;
+  border-radius: 20px;
+  padding: 40px 20px;
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato h2 {
+  color: #d63384;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.formulario-contato p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.campo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #d63384;
+}
+
+.botao-enviar {
+  background-color: #d63384;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-enviar:hover {
+  background-color: #b02468;
+  transform: translateY(-2px);
+}
