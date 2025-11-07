@@ -330,87 +330,15 @@ body {
 }
 
 /* sobrancelha*/
-.menu-servicos {
-  display: flex;
-  justify-content: center; /* centraliza horizontalmente */
-  align-items: center;
-  gap: 20px; /* espaçamento entre os itens */
-  flex-wrap: wrap; /* quebra linha se faltar espaço */
-  padding: 20px;
-  border-radius: 12px;
-  width: fit-content;
-  margin: 40px auto; /* centraliza o menu na tela */
-}
 
-.item-menu {
-  text-decoration: none;
-  color: #2f4f4f;
-  font-weight: 600;
-  background-color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  transition: all 0.3s ease;
-}
-
-.item-menu:hover {
-  background-color: #2f4f4f;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.texto-sobrancelha p {
-  text-align: left;
-}
-.container-sobrancelha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-}
-.container-sobrancelha div {
-  padding: 1rem;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
-}
 .texto-guia-sobrancelha {
+  gap: 500px;
   text-align: center;
   font-family: "Roboto Mono", monospace;
   color: rgb(241, 250, 238);
 }
-.texto-sobrancelha {
-  /* quadro branco */
-  background-color: #ffffff;
-  color: #333333;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.texto-guia-sobrancelha img {
-  /* Deixa a borda convexa */
-  border-radius: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.texto-guia-sobrancelha img:hover {
-  /* Da zoom na foto */
-  transform: scale(1.05);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
-html {
-  scroll-behavior: smooth;
+.texto-sobrancelha h1 {
+  gap: 20px;
 }
 
 /* Maquiagem  */
