@@ -635,15 +635,16 @@ hr {
 
 /* sobrancelha*/
 .menu-servicos {
+  text-align: center;
   display: flex;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center;
   align-items: center;
-  gap: 20px; /* espaçamento entre os itens */
-  flex-wrap: wrap; /* quebra linha se faltar espaço */
+  gap: 10px;
+  flex-wrap: wrap;
   padding: 20px;
   border-radius: 12px;
   width: fit-content;
-  margin: 40px auto; /* centraliza o menu na tela */
+  margin: 40px auto;
 }
 
 .item-menu {
@@ -1041,13 +1042,85 @@ hr {
   color: #f1faee;
   font-size: 0.95em;
 }
-@media (max-width: 700px) {
-  .cabecalho {
-    font-size: 36px;
-  }
 
-  .menu-principal {
-    gap: 20px;
-    overflow-x: scroll;
-  }
+nav a {
+  text-decoration: none;
+  color: #b88080;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+.hero-section {
+  color: white;
+  padding: 64px 32px;
+  text-align: center;
+  margin-bottom: 48px;
+  border-radius: 10px;
+}
+
+.hero-section h2 {
+  font-size: 35.2px;
+  margin-bottom: 16px;
+}
+
+.hero-section p {
+  font-size: 17px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section {
+  background: white;
+  padding: 48px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.content-section h3 {
+  color: #d63384;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #d4a5a5;
+  padding-bottom: 0.5rem;
+}
+
+.content-section p {
+  font-size: 17px;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.valor-card {
+  padding: 32px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.valor-card h4 {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.valor-card p {
+  font-size: 15px;
+  text-align: left;
 }
