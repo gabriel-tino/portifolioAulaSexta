@@ -119,15 +119,13 @@ body {
 }
 
 .icone {
-  background-color: rgb(114, 174, 132);
+  background-color: rgba(255, 255, 255, 0.1);
   color: rgb(217, 248, 225);
-  border: 3px solid rgb(114, 174, 132);
   border-radius: 20px;
   text-align: center;
   max-width: 950px;
   width: 600px;
   padding: 30px 20px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -217,60 +215,61 @@ body {
   font-size: 35px;
 }
 
-.demonstracao-servicos {
-  color: rgb(217, 248, 225);
+.galeria-depilacao {
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
 
-  margin: auto;
-  font-family: Arial, sans-serif;
+.card-depilacao {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-depilacao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-depilacao img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
   border-radius: 10px;
-  background: rgb(114, 174, 132);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
-.demonstracao-servicos ul {
-  list-style: none;
-  padding: 0;
+.card-depilacao h3 {
+  margin: 10px 0 5px;
+  color: #fff;
 }
 
-.demonstracao-servicos li {
-  margin: 20px 0;
-}
-
-.demonstracao-servicos .texto-demonstracao {
-  color: #070707;
-  cursor: pointer;
-  font-size: 18px;
-  text-decoration: underline;
-  transition: color 0.2s;
-}
-
-.demonstracao-servicos .texto-demonstracao:hover {
-  color: rgb(240, 243, 239);
-}
-
-.demonstracao-servicos .imagemD {
-  display: none;
-  width: 250px;
-  margin-top: 10px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.demonstracao-servicos .mostrar {
-  display: block;
+.card-depilacao p {
+  color: #f1faee;
+  font-size: 0.95em;
 }
 
 .tabela-precos {
   margin: auto;
-  font-family: Arial, sans-serif;
+  color: #fcfcfc;
+  font-family: "Roboto Mono", monospace;
   border-radius: 10px;
-  background: rgb(114, 174, 132);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .tabela-precos ul {
   list-style: none;
   padding: 0;
+  color: #fcfcfc;
 }
 
 .tabela-precos li {
@@ -278,38 +277,48 @@ body {
 }
 
 .cuidados {
+  text-align: center;
+
   margin: auto;
+  color: #fcfcfc;
   font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .depoimentos {
+  text-align: center;
+
   margin: auto;
+  color: #fcfcfc;
   font-family: Arial, sans-serif;
   border-radius: 10px;
-  background: rgb(114, 174, 132);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .depoimentos p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #fcfcfc;
   margin: 10px 0;
   font-style: italic;
 }
 
 .agendamento {
+  text-align: center;
+
   margin: auto;
+  color: #fcfcfc;
   font-family: Arial, sans-serif;
   border-radius: 10px;
-  background: rgb(114, 174, 132);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .agendamento a {
-  color: #070707;
+  color: #ffffff;
   cursor: pointer;
   font-size: 18px;
   text-decoration: underline;
@@ -318,6 +327,382 @@ body {
 
 .agendamento a:hover {
   color: rgb(240, 243, 239);
+}
+
+/* sobrancelha*/
+.menu-servicos {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;
+  gap: 20px; /* espaçamento entre os itens */
+  flex-wrap: wrap; /* quebra linha se faltar espaço */
+  padding: 20px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 40px auto; /* centraliza o menu na tela */
+}
+
+.item-menu {
+  text-decoration: none;
+  color: #2f4f4f;
+  font-weight: 600;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.item-menu:hover {
+  background-color: #2f4f4f;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto-sobrancelha p {
+  text-align: left;
+}
+.container-sobrancelha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+}
+.container-sobrancelha div {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+.texto-guia-sobrancelha {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(241, 250, 238);
+}
+.texto-sobrancelha {
+  /* quadro branco */
+  background-color: #ffffff;
+  color: #333333;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.texto-guia-sobrancelha img {
+  /* Deixa a borda convexa */
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.texto-guia-sobrancelha img:hover {
+  /* Da zoom na foto */
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Maquiagem  */
+.essencia {
+  background-color: #f2efea; /* tom suave de verde */
+  border-radius: 20px; /* bordas arredondadas */
+  padding: 20px; /* espaço interno */
+  width: 80%; /* largura ajustável */
+  margin: 30px auto; /* centraliza na página */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+
+.essencia h2 {
+  color: #d63384; /* rosa forte */
+  text-align: center;
+}
+
+.essencia a {
+  color: #d63384;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.essencia a:hover {
+  text-decoration: underline;
+}
+
+.servicos {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f2efea; /* tom suave  verde*/
+  border-radius: 20px;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.servicos h2 {
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.servicos-lista {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.servicos-lista li {
+  background: #fff; /* fundo branco verde */
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicos-lista li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.servicos-lista a {
+  display: block;
+  font-weight: bold;
+  color: #d63384;
+  text-decoration: none;
+  font-size: 1.1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.servicos-lista a:hover {
+  text-decoration: underline;
+}
+
+.servico-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  opacity: 0; /* Esconde a imagem */
+  transform: scale(1.05);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.servicos-lista li:hover .servico-img {
+  opacity: 1; /*  Mostra a imagem ao passar o mouse */
+  transform: scale(1);
+}
+
+.maquiagem {
+  display: flex; /* Usa flexbox para layout */
+  align-items: center; /* Alinha itens verticalmente */
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  background-color: #f2efea; /* tom suave de verde */
+  border-radius: 20px; /* bordas arredondadas */
+  padding: 30px; /* espaço interno */
+  margin: 40px auto; /* centraliza na página */
+  width: 80%; /* largura ajustável */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve */
+  gap: 20px; /* espaço entre texto e imagem */
+  flex-wrap: wrap; /* Garante que fique bom em telas pequenas */
+  font-family: "Poppins", sans-serif;
+}
+
+.maquiagem-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.maquiagem h2 {
+  color: #d63384;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.maquiagem p {
+  text-align: justify;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.maquiagem-img img {
+  width: 350px; /*largura da imagem */
+  height: auto; /*altura da imagem */
+  border-radius: 30px; /* bordas arredondadas da imagem */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.maquiagem-img img:hover {
+  transform: scale(1.05); /* zoom suave ao passar o mouse */
+}
+
+.produtos {
+  background-color: #f2efea; /* tom suave verde*/
+  border-radius: 20px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.produtos h2 {
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.produtos p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.lista-produtos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.lista-produtos li {
+  background: #fff;
+  border-radius: 15px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.lista-produtos li:hover {
+  background-color: #ffe4ef; /* leve mudança de cor ao passar o mouse */
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lista-produtos a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.lista-produtos a:hover {
+  text-decoration: underline;
+}
+
+.contato {
+  background-color: #f2efea; /* tom suave verde*/
+  border-radius: 20px;
+  padding: 40px 20px;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center; /* centraliza o texto */
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.contato h2 {
+  color: #d63384;
+  margin-bottom: 25px;
+}
+
+.contato-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-info img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.info {
+  max-width: 400px;
+  text-align: left;
+  line-height: 1.8;
+  color: #333; /* cor do texto */
+}
+
+.info a {
+  color: #d63384;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: rgb(114, 174, 132);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  margin: 25px auto;
+}
+.final {
+  text-align: center;
+  font-family: "Great Vibes";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #d63384;
+  margin-top: 30px;
 }
 
 /* sobrancelha*/
